@@ -52,7 +52,7 @@ describe('Метатестування: перевірка тестового п
     // Запускаємо групу тестів напряму
     try {
       // Запускаємо всі тести одночасно, виключаючи supertest.test.js
-      const command = 'npx vitest run src/__test__';
+      const command = 'npx vitest run src/__tests__';
       console.log(`Виконуємо команду: ${command}`);
       
       const result = execSync(command, { stdio: 'pipe' }).toString();
@@ -110,4 +110,4 @@ function findTestFiles(dir) {
   
   scanDir(dir)
   return testFiles
-} 
+}
