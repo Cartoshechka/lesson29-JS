@@ -6,6 +6,7 @@ export default defineConfig({
     environment: 'jsdom',
     setupFiles: ['./vitest.setup.js'],
     include: ['**/*.test.js'],
-    silent: true
+    silent: false,
+    reporters: ['verbose']
   }
-}) 
+})
